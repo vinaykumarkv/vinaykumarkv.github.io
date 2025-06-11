@@ -61,11 +61,23 @@
         .contact-info, .skills, .certifications, .experience, .education {
             padding: 10px 0;
         }
-        .skills ul, .certifications ul, .experience ul, .education ul {
-            list-style: none;
-            padding: 0;
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Ensures columns span evenly across the screen */
+            gap: 10px; /* Adds spacing between the columns */
         }
-        .skills ul li, .certifications ul li, .experience ul li, .education ul li {
+        .skills ul {
+            flex: 1; /* Makes each column take equal width */
+            min-width: 200px; /* Ensures columns don't become too narrow */
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            list-style: disc; /* Enable bullet points globally */
+            padding-left: 20px; /* Add spacing for bullet points */
+        }
+        li {
             margin: 5px 0;
         }
         .experience ul li strong {
@@ -84,34 +96,54 @@
     <div class="container">
         <section class="contact-info">
             <h2>Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:vinaykumar.kv@outlook.com">vinaykumar.kv@outlook.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vinay-kumar-k-v">www.linkedin.com/in/vinay-kumar-k-v</a></p>
-            <p><strong>Portfolio:</strong> <a href="https://vinaykumarkv.github.io">vinaykumarkv.github.io</a></p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:vinaykumar.kv@outlook.com">vinaykumar.kv@outlook.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vinay-kumar-k-v">www.linkedin.com/in/vinay-kumar-k-v</a></li>
+                <li><strong>Portfolio:</strong> <a href="https://vinaykumarkv.github.io">vinaykumarkv.github.io</a></li>
+            </ul>
         </section>
 
-        <section class="skills">
+        <section>
             <h2>Top Skills</h2>
-            <ul>
-                <li>Product Design</li>
-                <li>Technical Project Delivery</li>
-                <li>Presentations</li>
-            </ul>
+            <section class="skills">
+                <ul style="margin-left: 25px">
+                    <li>Product Design</li>
+                    <li>Technical Project Delivery</li>
+                    <li>Presentations</li>
+                    <li>Highly Organised</li>
+                    <li>Customer Oriented</li>
+                </ul>
+                <ul>
+                    <li>Strategic Planner</li>
+                    <li>Creative Designer</li>
+                    <li>Data Driven</li>
+                    <li>UI/UX</li>
+                    <li>Figma</li>
+                </ul>
+                <ul>
+                    <li>Visio</li>
+                    <li>Azure DevOps, Jira</li>
+                    <li>Miro</li>
+                    <li>Python, Java (Basic)</li>
+                    <li>HTML/CSS/JS</li>
+                    <li>Mendix</li>
+                    <li>Git/GitHub</li>
+                </ul>
+            </section>
         </section>
 
         <section class="certifications">
             <h2>Certifications</h2>
             <ul>
-                <li>Certificate Of Completion: Solving Business Problems</li>
-                <li>Mendix Rapid Developer</li>
-                <li>Scrum Certification 2022 + ScrumMaster + Agile Scrum Training</li>
-                <li>Business Analysis Foundations</li>
-                <li>Lean Six Sigma White Belt Certified</li>
+                <li>Scrum - PSM (Professional Scrum Master)</li>
+                <li>Technical - Python, Java, Mendix, DevOps, HTML, Testing, MySQL</li>
+                <li>Business Analysis – LinkedIn, UiPath, Automation Anywhere</li>
             </ul>
         </section>
 
         <section class="summary">
             <h2>Summary</h2>
-            <p>I have been part of TCS for the past 9+ years (incl. 2 years Sabbatical). I love working in a challenging environment, and my consistent performance opened up good opportunities at TCS. My team and I have received multiple recognitions from customers. Looking for exciting and challenging roles ahead.</p>
+            <p>I have been helping teams build web products as a customer-facing Product Owner for nearly 6 years. Most recently, I led the creation of the Digital COA product (MVP deployed at 2 manufacturing sites, with plans to scale across 20+ sites). I'm an expert in product strategy, agile/waterfall delivery, marketing, and operations. A highly organized team player, I thrive as a generalist while also diving deep to create innovative solutions. I hold an MBA and a Bachelor of Engineering from VTU (Visvesvaraya Technological University).</p>
         </section>
 
         <section class="experience">
