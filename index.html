@@ -83,14 +83,36 @@
         .experience ul li strong {
             color: #444;
         }
+		/* Style for the button */
+		.resume-button {
+		display: inline-block;
+		padding: 10px 20px;
+		font-size: 16px;
+		font-weight: bold;
+		color: #fff;
+		background-color: #007bff; /* Blue color */
+		border: none;
+		border-radius: 5px;
+		text-decoration: none;
+		cursor: pointer;
+		transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+	
+		.resume-button:hover {
+		background-color: #0056b3; /* Darker blue on hover */
+		transform: scale(1.05); /* Slight zoom effect */
+		}
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 style="color:#333;">Vinay Kumar, Kengeri Vijaya Kumar</h1>
+            <h2>Welcome to My Portfolio</h2>
+			<h1 style="color:#333;">Vinay Kumar, Kengeri Vijaya Kumar</h1>
             <p style="color:#333;">Product Owner at Tata Consultancy Services</p>
             <p style="color:#333;">London Area, United Kingdom</p>
+			<p>Hi, I'm Vinay Kumar! Check out my resume below:</p>
+			<a href="resume.pdf" class="resume-button" target="_blank">View My Resume</a>
         </div>
     </header>
     <div class="container">
