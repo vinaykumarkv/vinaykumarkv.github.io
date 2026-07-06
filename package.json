@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "export": "node scripts/export.js"
   },
   "dependencies": {
     "lucide-react": "^1.23.0",
