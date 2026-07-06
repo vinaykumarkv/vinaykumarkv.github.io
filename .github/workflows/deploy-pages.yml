@@ -121,5 +121,5 @@ jobs:
             fi
             sleep 5
           done
-          echo "Site did not return 200 within timeout"
+          echo "Site did not return 200 within timeout period"
           exit 1
