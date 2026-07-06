@@ -10,9 +10,10 @@ Run a production export locally:
 
 ```bash
 npm run build
+npm run export
 ```
 
-The static site output is generated in `out/`.
+The static site output is generated in `out/` after the export helper copies `.next/output/export` into that folder.
 
 ## GitHub Pages Deployment
 
