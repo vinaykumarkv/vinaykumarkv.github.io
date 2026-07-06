@@ -16,8 +16,34 @@
   color: #fff;
 }
 
+.statusBar {
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+}
+
+.statusPill {
+  padding: 2px 10px;
+  background: rgba(129, 246, 255, 0.15);
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.65rem;
+}
+
+.statusText {
+  flex: 1;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+}
+
 .messages {
   flex: 1;
+  min-height: 0;
   padding: 12px;
   overflow-y: auto;
   display: flex;
@@ -32,6 +58,11 @@
   padding: 8px 12px;
   border-radius: 12px 2px 12px 12px;
   max-width: 85%;
+}
+
+.userText {
+  margin: 0;
+  word-break: break-word;
 }
 
 .assistantMsg {

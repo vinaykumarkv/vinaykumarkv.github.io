@@ -1,11 +1,21 @@
 "use client";
+
+import { FormEvent, useEffect, useRef, useState } from "react";
 import styles from "./ChatBot.module.css";
 
-// Helper to clean up common markdown formatting issues from LLM output
+const CHAT_API_URL =
+  process.env.NEXT_PUBLIC_CHAT_API_URL ??
+  "https://vinaykumarkv-digitaltwin.hf.space/chat";
+
+const DEFAULT_ASSISTANT_MESSAGE =
+  "Ask me anything about Vinay's digital twin, portfolio, or recent projects.";
+
+type ChatRole = "assistant" | "user";
+
+type BaseMessage = { id: string; role: ChatRole; content: string };
+
 const cleanMarkdown = (md: string): string => {
-  // Ensure heading markers are followed by a space
   let cleaned = md.replace(/^##([^\s])/gm, "## $1");
-  // Convert plain list items like "Item 1" into markdown list format
   cleaned = cleaned.replace(/^(Item\s+\d+.*)$/gm, "- $1");
   return cleaned;
 };
@@ -70,30 +80,160 @@ const renderMarkdownToHtml = (markdown: string): string => {
   return blocks.join("");
 };
 
+const createMessageId = (): string =>
+  typeof crypto !== "undefined" && "randomUUID" in crypto
+    ? crypto.randomUUID()
+    : Math.random().toString(36).slice(2);
+
 export default function ChatBot() {
-  const assistantMessage = renderMarkdownToHtml(
-    "## Digital twin chat is offline on GitHub Pages\n- GitHub Pages only serves static files, so the live AI proxy is disabled here.\n- Contact Vinay directly through the links below for a conversation or demo request."
-  );
+  const [messages, setMessages] = useState<BaseMessage[]>([
+    {
+      id: "assistant-welcome",
+      role: "assistant",
+      content: DEFAULT_ASSISTANT_MESSAGE,
+    },
+  ]);
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollTo({
+        top: messagesEndRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }, [messages]);
+
+  const sendConversation = async (conversation: BaseMessage[]) => {
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch(CHAT_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: conversation.map(({ role, content }) => ({ role, content })),
+          temperature: 0.3,
+          max_tokens: 700,
+        }),
+      });
+
+      if (!response.ok) {
+        const details = await response.text();
+        throw new Error(details || `Unexpected status ${response.status}`);
+      }
+
+      const payload = await response.json();
+      const reply = (payload.reply ?? "").trim();
+
+      if (!reply) {
+        throw new Error("Chat service returned an empty response.");
+      }
+
+      setMessages((current) => [
+        ...current,
+        { id: createMessageId(), role: "assistant", content: reply },
+      ]);
+    } catch (caught) {
+      const message = caught instanceof Error ? caught.message : "Unknown error";
+      setError(message);
+      setMessages((current) => [
+        ...current,
+        {
+          id: createMessageId(),
+          role: "assistant",
+          content:
+            "I couldn't reach the chat backend right now. Please try again in a few moments.",
+        },
+      ]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const trimmed = inputValue.trim();
+    if (!trimmed || isLoading) {
+      return;
+    }
+
+    const userMessage: BaseMessage = {
+      id: createMessageId(),
+      role: "user",
+      content: trimmed,
+    };
+
+    setInputValue("");
+    setMessages((current) => {
+      const updated = [...current, userMessage];
+      void sendConversation(updated);
+      return updated;
+    });
+  };
+
+  const statusLabel = error
+    ? "Disconnected"
+    : isLoading
+    ? "Thinking"
+    : "Live";
+  const statusText = error
+    ? "Chat service is unavailable."
+    : isLoading
+    ? "Vinay is composing a reply…"
+    : "Connected to the Hugging Face digital twin.";
 
   return (
     <div className={styles.chatContainer}>
-      <div className={styles.messages}>
-        <div className={styles.assistantMsg}>
-          <div dangerouslySetInnerHTML={{ __html: assistantMessage }} />
-        </div>
+      <div className={styles.statusBar}>
+        <span className={styles.statusPill}>{statusLabel}</span>
+        <span className={styles.statusText}>{statusText}</span>
       </div>
-      <div className={styles.inputBar}>
+      <div
+        className={styles.messages}
+        ref={messagesEndRef}
+        aria-live="polite"
+      >
+        {messages.map((message) => (
+          <div
+            key={message.id}
+            className={
+              message.role === "user" ? styles.userMsg : styles.assistantMsg
+            }
+          >
+            {message.role === "assistant" ? (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: renderMarkdownToHtml(message.content),
+                }}
+              />
+            ) : (
+              <p className={styles.userText}>{escapeHtml(message.content)}</p>
+            )}
+          </div>
+        ))}
+      </div>
+      <form className={styles.inputBar} onSubmit={handleSubmit}>
         <input
           type="text"
-          value="Static deployment: chat disabled"
-          readOnly
-          disabled
+          value={inputValue}
+          onChange={(event) => setInputValue(event.target.value)}
+          placeholder="Ask Vinay about the digital twin, portfolio, or roadmap"
           className={styles.inputField}
+          disabled={isLoading}
         />
-        <button disabled className={styles.sendBtn}>
-          Offline
+        <button
+          type="submit"
+          className={styles.sendBtn}
+          disabled={!inputValue.trim() || isLoading}
+        >
+          {isLoading ? "Sending…" : "Send"}
         </button>
-      </div>
+      </form>
     </div>
   );
 }
