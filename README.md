@@ -16,18 +16,18 @@ The static site output is generated in `out/`.
 
 ## GitHub Pages Deployment
 
-This repository deploys to GitHub Pages using GitHub Actions from the `main` branch.
+Every push to `main` builds the Next.js app, runs `npm run export` to produce the `out/` directory, and then pushes those files to the `gh-pages` branch via GitHub Actions.
 
 Required repository settings:
 
-```text
-Settings -> Pages -> Build and deployment -> Source = GitHub Actions
+```
+Settings -> Pages -> Build and deployment -> Source = gh-pages branch / root
 ```
 
 The workflow file is:
 
-```text
+```
 .github/workflows/deploy-pages.yml
 ```
 
-Every push to `main` triggers a fresh static export and publishes the contents of `out/` to GitHub Pages.
+The action uses `peaceiris/actions-gh-pages` so the exported files are kept in sync with the `gh-pages` branch automatically—you do not need to commit `out/` yourself.
