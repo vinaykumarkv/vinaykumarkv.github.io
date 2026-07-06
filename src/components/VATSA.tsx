@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./VATSA.module.css";
-import { Video, Volume2, AlignLeft, BarChart3, Radio } from "lucide-react";
+import { Video, Volume2, AlignLeft, BarChart3, Radio } from "../lucide-shim";
 
 type Modality = "video" | "audio" | "text" | "sensory" | "action";
 

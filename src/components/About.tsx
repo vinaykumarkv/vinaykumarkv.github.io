@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./About.module.css";
-import { Brain, Cpu, ShieldCheck, Database, Award } from "lucide-react";
+import { Brain, Cpu, ShieldCheck, Database, Award } from "../lucide-shim";
 
 interface Skill {
   name: string;

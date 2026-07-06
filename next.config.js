@@ -1,10 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // ── Static‑HTML export ─────────────────────
-  output: 'export',
-  basePath: '',
-  assetPrefix: '',
-};
+const repoName = "vinaykumarkv.github.io";
+const isGithubPages = process.env.GITHUB_ACTIONS === "true";
 
-module.exports = nextConfig;
-module.exports.turbopack = { root: '.' };
+module.exports = {
+  output: "export",
+  transpilePackages: ["lucide-react"],
+  basePath: isGithubPages ? `/${repoName}` : "",
+  assetPrefix: isGithubPages ? `/${repoName}` : "",
+  images: {
+    unoptimized: true,
+  },
+};

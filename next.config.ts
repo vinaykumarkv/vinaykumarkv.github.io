@@ -1,9 +1,0 @@
-import { type NextConfig } from 'next';
-const config: NextConfig = {
-  // ── Static‑HTML export ─────────────────────
-  output: 'export',
-  basePath: '',
-  assetPrefix: '',
-};
-export const turbopack = { root: '.' };
-export default config;

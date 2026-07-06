@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./Hero.module.css";
-import { Mail, Terminal, ArrowRight, Server, BrainCircuit } from "lucide-react";
+import { Mail, Terminal, ArrowRight, Server, BrainCircuit } from "../lucide-shim";
 
 interface LogEntry {
   type: "command" | "system" | "help" | "skills" | "contact";

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./Career.module.css";
-import { ChevronRight, Calendar, MapPin, Briefcase } from "lucide-react";
+import { ChevronRight, Calendar, MapPin, Briefcase } from "../lucide-shim";
 
 interface RoleDetails {
   id: string;

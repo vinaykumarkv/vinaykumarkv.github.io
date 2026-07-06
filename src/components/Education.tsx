@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./Education.module.css";
-import { GraduationCap, FileText, Calendar, MapPin, Award } from "lucide-react";
+import { GraduationCap, FileText, Calendar, MapPin, Award } from "../lucide-shim";
 
 export default function Education() {
   return (

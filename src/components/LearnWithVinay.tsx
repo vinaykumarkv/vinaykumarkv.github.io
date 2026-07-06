@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./LearnWithVinay.module.css";
-import { BookOpen } from "lucide-react";
+import { BookOpen } from "../lucide-shim";
 
 interface Course {
   title: string;
