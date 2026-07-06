@@ -28,8 +28,11 @@ jobs:
       - name: Ensure clean export directory
         run: rm -rf out
 
-      - name: Build Next.js app
-        run: npm run build
+      - name: Build Next.js app & export static files
+        run: |
+          npm run build
+          mkdir -p out
+          cp -R .next/output/export/. out/
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
