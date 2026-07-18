@@ -22,20 +22,20 @@ export default function About() {
 
   const skillCategories: SkillCategory[] = [
     {
-      title: "Machine Learning & Deep Learning",
+      title: "Machine Learning & NLP",
       icon: <Brain size={16} />,
       skills: [
         {
-          name: "PyTorch & Custom Architectures",
-          level: 92,
-          label: "Expert",
-          detail: "Built VATSA five-modality architecture, custom visual/audio classifiers.",
+          name: "Hierarchical NLP Models",
+          level: 94,
+          label: "Advanced",
+          detail: "Built location-prediction models from unstructured records for audit anomaly workflows.",
         },
         {
-          name: "Model Explainability (SHAP/LIME)",
-          level: 85,
-          label: "Advanced",
-          detail: "Model interpretability pipelines for safety-critical settings.",
+          name: "Classification & Experimentation",
+          level: 90,
+          label: "Expert",
+          detail: "Developed YAML-driven experimentation pipelines for feature, dataset, and model swap workflows.",
         },
       ],
     },
@@ -44,16 +44,16 @@ export default function About() {
       icon: <Cpu size={16} />,
       skills: [
         {
-          name: "LLM Evaluation Frameworks",
+          name: "LLM-Based Agent Systems",
           level: 95,
-          label: "Production-Proved",
-          detail: "Evaluated Azure Doc Intel vs GPT-4o Vision, defining GSK's adoption strategy.",
+          label: "Production-Ready",
+          detail: "Extended systems with Python-based LLM agent architectures for process-gap and deviation analysis.",
         },
         {
-          name: "LangChain, RAG & Vector DBs",
-          level: 90,
+          name: "Document Intelligence Evaluation",
+          level: 92,
           label: "Expert",
-          detail: "Architected advanced semantic retrieval & agentic orchestration pipelines.",
+          detail: "Compared Azure Document Intelligence and GPT-4o Vision for regulatory document automation across global sites.",
         },
       ],
     },
@@ -62,34 +62,34 @@ export default function About() {
       icon: <Database size={16} />,
       skills: [
         {
-          name: "Python & FastAPI Microservices",
+          name: "Python Automation & APIs",
           level: 93,
           label: "Senior Developer",
-          detail: "Built high-throughput XML signature verification microservices in production.",
+          detail: "Built XML signature verification utilities, Jira analytics automation, and production utilities in Python.",
         },
         {
-          name: "Docker & Infrastructure Automation",
-          level: 80,
+          name: "GxP Delivery Enablement",
+          level: 88,
           label: "Advanced",
-          detail: "Containerized AI systems, shell-scripting automation, backup infrastructure.",
+          detail: "Worked across URS/SRS/UAT, validation, and digital platform delivery in regulated environments.",
         },
       ],
     },
     {
-      title: "Compliance & Technical Leadership",
+      title: "Leadership & Stakeholder Alignment",
       icon: <ShieldCheck size={16} />,
       skills: [
         {
-          name: "GxP Regulatory Validation",
+          name: "Cross-Functional Delivery",
           level: 96,
           label: "SME",
-          detail: "Managed end-to-end regulatory sign-off, authoring URS/SRS/UAT protocols.",
+          detail: "Led requirements conversations with QA, Regulatory, Operations, and IT stakeholders across sites.",
         },
         {
-          name: "Agile & Jira Analytics",
-          level: 88,
-          label: "PSM I Certified",
-          detail: "Built Jira API analytics dashboard automation eliminating manual reporting.",
+          name: "Agile & Scrum Leadership",
+          level: 90,
+          label: "PSM I",
+          detail: "Managed sprint planning, release coordination, backlog ownership, and stakeholder communication.",
         },
       ],
     },
@@ -102,26 +102,24 @@ export default function About() {
   return (
     <section id="about" className={styles.aboutSection}>
       <div className="section-header">
-        <h2 className="section-title">Bridging Two Worlds</h2>
-        <p className="section-subtitle">The AI Engineer Who Deploys Under Regulation</p>
+        <h2 className="section-title">Bridging Strategy and Systems</h2>
+        <p className="section-subtitle">The AI Engineer Who Works Across Business, Risk, and Delivery</p>
       </div>
 
       <div className={styles.layout}>
         {/* Left Side: Professional Narrative */}
         <div className={styles.bioBlock}>
           <p className={styles.introText}>
-            I don&apos;t just evaluate AI models. <strong>I deploy them into production</strong>. 
-            My expertise is forged in the most demanding environments you can work in: <strong>GxP-regulated pharmaceutical manufacturing</strong>.
+            I build AI systems that operate in the real world, including <strong>audit-anomaly detection, hierarchical NLP extraction, and GenAI tooling in regulated pharmaceutical environments</strong>.
           </p>
 
           <p className={styles.introText}>
-            With over 10 years of experience at Tata Consultancy Services (TCS), my career has spanned the complete software lifecycle. 
-            I have evolved from an Infrastructure Systems Engineer to a Product Engineer, and now to an <strong>AI Engineer specializing in LLM evaluation and regulated AI systems</strong>.
+            With 10+ years at Tata Consultancy Services, I have moved from infrastructure operations into product engineering, onsite leadership, and now full-time AI/ML delivery. I am comfortable translating complex regulatory and operational needs into production-ready models and experiments.
           </p>
 
           <div className={styles.highlightBox}>
             <div className={styles.highlightTitle}>Core Professional Differentiator</div>
-            What I bring that most AI engineers don&apos;t: 8 years of understanding how regulated businesses make decisions, how to frame the right problems before writing code, how to author strict validation documentation, and how to explain technical trade-offs to a board.
+            What I bring that most AI engineers do not: the ability to work on both sides of the table, leading requirements conversations with QA, Regulatory, and Operations teams while also building the models, pipelines, and agent architectures behind the solution.
           </div>
 
           <div className={styles.pillars}>

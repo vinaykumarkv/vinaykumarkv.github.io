@@ -9,7 +9,7 @@ export default function Education() {
     <section id="education" className={styles.eduSection}>
       <div className="section-header">
         <h2 className="section-title">Academic Foundation</h2>
-        <p className="section-subtitle">Combining Doctoral Research with Business Rigor</p>
+        <p className="section-subtitle">Combining Doctoral Research, Applied AI, and Business Rigor</p>
       </div>
 
       <div className={styles.layout}>
@@ -46,19 +46,19 @@ export default function Education() {
             </div>
             <div className={styles.eduContent}>
               <h3 className={styles.eduDegree}>Doctor of Business Administration (DBA)</h3>
-              <p className={styles.eduSchool}>Walsh College</p>
+              <p className={styles.eduSchool}>Walsh College, USA (via Great Learning)</p>
               <div className={styles.eduMeta}>
                 <span>
                   <Calendar size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  Dec 2025 - Dec 2028
+                  2025 - Dec 2028
                 </span>
                 <span>
                   <MapPin size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  Michigan, US (Remote)
+                  Remote / US-based
                 </span>
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-                Focus: Artificial Intelligence and Machine Learning models for safety-critical autonomous systems.
+                Focus: AI & Machine Learning, with research interest in autonomous systems in safety-critical environments.
               </p>
             </div>
           </div>
@@ -70,19 +70,19 @@ export default function Education() {
             </div>
             <div className={styles.eduContent}>
               <h3 className={styles.eduDegree}>Post Graduate Program in AI & ML</h3>
-              <p className={styles.eduSchool}>Texas McCombs School of Business</p>
+              <p className={styles.eduSchool}>McCombs School of Business, UT Austin</p>
               <div className={styles.eduMeta}>
                 <span>
                   <Calendar size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  Dec 2025 - Dec 2026
+                  In progress
                 </span>
                 <span>
                   <MapPin size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  Texas, US (Remote)
+                  Remote / US-based
                 </span>
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-                Focus: Business Applications of Artificial Intelligence and Machine Learning.
+                Focus: Applied AI & ML with a business-oriented lens for real-world deployment.
               </p>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Education() {
             </div>
             <div className={styles.eduContent}>
               <h3 className={styles.eduDegree}>Master of Business Administration (MBA)</h3>
-              <p className={styles.eduSchool}>Ramaiah Institute of Technology</p>
+              <p className={styles.eduSchool}>MSRIT, Visvesvaraya Technological University</p>
               <div className={styles.eduMeta}>
                 <span>
                   <Calendar size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
@@ -106,7 +106,7 @@ export default function Education() {
                 </span>
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-                Focus: Marketing, HR, and Market Research.
+                Focus: Marketing, with a strong grounding in business strategy and stakeholder communication.
               </p>
             </div>
           </div>
@@ -118,11 +118,11 @@ export default function Education() {
             </div>
             <div className={styles.eduContent}>
               <h3 className={styles.eduDegree}>Bachelor of Engineering (B.E.)</h3>
-              <p className={styles.eduSchool}>Sir M Visvesvaraya Institute of Technology</p>
+              <p className={styles.eduSchool}>Sir M. Visvesvaraya Institute of Technology</p>
               <div className={styles.eduMeta}>
                 <span>
                   <Calendar size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  2011 - 2015
+                  2012 - 2015
                 </span>
                 <span>
                   <MapPin size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
@@ -130,7 +130,7 @@ export default function Education() {
                 </span>
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-                Major: Electronics and Communications Engineering.
+                Major: Electronics & Communication Engineering.
               </p>
             </div>
           </div>

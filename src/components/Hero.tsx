@@ -14,11 +14,11 @@ export default function Hero() {
   const [logs, setLogs] = useState<LogEntry[]>([
     {
       type: "system",
-      content: "SYSTEM LOG ON: 2026-07-06T01:03:44. VATSA CORE V2.1 ACTIVE.",
+      content: "SYSTEM LOG ON: 2026-07-18T00:00:00. PROFILE CORE V3.0 ACTIVE.",
     },
     {
       type: "system",
-      content: "Type 'help' or click the quick action chips below to query database.",
+      content: "Type 'help' or click the quick action chips below to query profile database.",
     },
   ]);
 
@@ -65,8 +65,8 @@ export default function Hero() {
           type: "system",
           content: (
             <div className={styles.sysOutput}>
-              I build AI systems that work in the real world - including the most demanding environment: GxP-regulated pharmaceutical manufacturing.
-              With 10+ years of cross-functional experience across software delivery, product leadership, and AI engineering, I bridge the gap between business risk, regulatory safety compliance, and high-performance neural computing.
+              I build AI systems for regulated environments, including audit-anomaly detection, NLP location extraction, and GenAI tooling for pharmaceutical operations.
+              With 10+ years across product delivery, onsite leadership, and AI engineering, I connect business risk, regulatory expectations, and production-ready models.
             </div>
           ),
         });
@@ -79,15 +79,13 @@ export default function Hero() {
             <div className={styles.sysOutput}>
               <strong>[TECHNICAL STACK MATRIX]</strong>
               <br />
-              • ML/DL Core   :: PyTorch, Scikit-learn, SHAP
+              • ML/NLP Core   :: scikit-learn, TF-IDF, Word2Vec, hierarchical classification
               <br />
-              • GenAI Architectures :: LangChain, RAG, OpenAI API, LLM Evaluation
+              • GenAI Architectures :: LangChain, RAG, Azure OpenAI, LLM-based agents
               <br />
-              • Backend & API :: FastAPI, Python, Docker, SQL
+              • Data & APIs :: Python, SQL, pandas, NumPy, Flask, YAML pipelines
               <br />
-              • Infrastructure :: Linux/Windows Enterprise Adm, Backup Infrastructure
-              <br />
-              • Methodologies  :: GxP Validation (URS/SRS/UAT), Agile, Scrum (PSM I)
+              • Delivery & Validation :: GxP workflows, URS/SRS/UAT, Scrum, stakeholder alignment
             </div>
           ),
         });
@@ -198,11 +196,11 @@ export default function Hero() {
             <span className={styles.neonDot}></span> System Status: Online
           </div>
           <h1 className={styles.title}>
-            GXP Systems AI Engineer - Builder<br />
-            <span className={styles.titleGlow}>Regulated AI &amp; Robotics</span>
+            AI/ML Engineer | Forward Deployed Engineer<br />
+            <span className={styles.titleGlow}>GxP, GenAI &amp; Audit Intelligence</span>
           </h1>
           <p className={styles.subtitle}>
-            I am <span className={styles.highlightText}>Vinay Kumar K.V</span>, a GxP Systems AI Engineer bridging the gap between rigorous enterprise regulatory frameworks (GxP validation, LLM safety audits) and cutting-edge artificial intelligence, deep learning, and robotics.
+            I am <span className={styles.highlightText}>Vinay Kumar K.V</span>, an AI/ML engineer with 10+ years at TCS, building NLP and GenAI systems for regulated pharmaceutical environments and live audit-anomaly-detection workflows.
           </p>
           <div className={styles.ctaGroup}>
             <a href="#about" className="cyber-btn">
