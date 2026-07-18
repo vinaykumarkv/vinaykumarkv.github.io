@@ -102,7 +102,7 @@ export default function About() {
   return (
     <section id="about" className={styles.aboutSection}>
       <div className="section-header">
-        <h2 className="section-title">Bridging Strategy and Systems</h2>
+        <h2 className="section-title">Bridging Strategy and AI Systems</h2>
         <p className="section-subtitle">The AI Engineer Who Works Across Business, Risk, and Delivery</p>
       </div>
 
@@ -135,7 +135,7 @@ export default function About() {
               <Award className={styles.pillarIcon} size={24} />
               <h3 className={styles.pillarTitle}>Doctoral AI Research</h3>
               <p className={styles.pillarDesc}>
-                Conducting DBA research in Walsh College on neural architectures for safety-critical autonomous robotics.
+                Conducting DBA research in Walsh College on robust safety-critical autonomous systems.
               </p>
             </div>
           </div>

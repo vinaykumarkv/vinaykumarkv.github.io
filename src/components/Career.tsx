@@ -18,7 +18,7 @@ export default function Career() {
   const roles: RoleDetails[] = [
     {
       id: "ai-engineer",
-      role: "AI/ML Engineer - Audit Anomaly Detection & GenAI",
+      role: "AI/ML Engineer - NLP & AI Agents",
       company: "Tata Consultancy Services",
       dates: "Jun 2026 - Present",
       location: "London, United Kingdom",
@@ -44,7 +44,7 @@ export default function Career() {
     },
     {
       id: "product-engineer",
-      role: "Product Engineer - Business Analysis & Onsite Lead",
+      role: "Product Engineer - Lead / Business Analysis & GenAI Prototyping",
       company: "Tata Consultancy Services",
       dates: "2023 - Jun 2026",
       location: "London, United Kingdom",
@@ -66,7 +66,7 @@ export default function Career() {
     },
     {
       id: "product-engineer-bangalore",
-      role: "Product Engineer - Validation Lead / Scrum Master / Business Analyst",
+      role: "Product Engineer - Lead / Validation / Scrum / Business Analysis",
       company: "Tata Consultancy Services",
       dates: "2019 - 2023",
       location: "Bengaluru, India",
@@ -88,7 +88,7 @@ export default function Career() {
     },
     {
       id: "systems-engineer",
-      role: "Systems Engineer - Telecom & Infrastructure",
+      role: "Systems Engineer - IT Infrastructure Backup Automation",
       company: "Tata Consultancy Services",
       dates: "2015 - 2017",
       location: "Bengaluru, India",

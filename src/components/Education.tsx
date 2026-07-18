@@ -45,7 +45,7 @@ export default function Education() {
               <GraduationCap size={20} />
             </div>
             <div className={styles.eduContent}>
-              <h3 className={styles.eduDegree}>Doctor of Business Administration (DBA)</h3>
+              <h3 className={styles.eduDegree}>Doctor of Business Administration (DBA) in AI & Machine Learning</h3>
               <p className={styles.eduSchool}>Walsh College, USA (via Great Learning)</p>
               <div className={styles.eduMeta}>
                 <span>

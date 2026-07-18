@@ -125,7 +125,7 @@ export default function Hero() {
               <br />
               LinkedIn: <a href="https://linkedin.com/in/vinay-kumar-k-v" target="_blank" rel="noopener noreferrer">linkedin.com/in/vinay-kumar-k-v</a>
               <br />
-              GitHub/Portfolio: <a href="https://vinaykumarkv.github.io" target="_blank" rel="noopener noreferrer">vinaykumarkv.github.io</a>
+              GitHub/Portfolio: <a href="https://github.com/vinaykumarkv" target="_blank" rel="noopener noreferrer">github.com/vinaykumarkv</a>
             </div>
           ),
         });
@@ -179,7 +179,7 @@ export default function Hero() {
             <svg viewBox="0 0 24 24" width={15} height={15} stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "middle" }}><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn
           </a>
           <a
-            href="https://vinaykumarkv.github.io"
+            href="https://github.com/vinaykumarkv"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.navLink}
@@ -200,7 +200,7 @@ export default function Hero() {
             <span className={styles.titleGlow}>GxP, GenAI &amp; Audit Intelligence</span>
           </h1>
           <p className={styles.subtitle}>
-            I am <span className={styles.highlightText}>Vinay Kumar K.V</span>, an AI/ML engineer with 10+ years at TCS, building NLP and GenAI systems for regulated pharmaceutical environments and live audit-anomaly-detection workflows.
+            I am <span className={styles.highlightText}>Vinay Kumar K.V</span>, an AI/ML engineer with 10+ years experience delivering solutions at TCS, building NLP and GenAI agentic systems for regulated pharmaceutical environments.
           </p>
           <div className={styles.ctaGroup}>
             <a href="#about" className="cyber-btn">
