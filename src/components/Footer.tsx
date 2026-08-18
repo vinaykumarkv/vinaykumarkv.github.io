@@ -13,7 +13,7 @@ export default function Footer() {
       <div className={styles.contactCard}>
         <h2 className={styles.cardTitle}>Deploy Secure AI Systems</h2>
         <p className={styles.cardDesc}>
-          Whether you are looking for a Senior AI/ML Engineer or AI Architect who understands GxP compliance, an LLM evaluation architect, or a Research collaborator on multimodal robotics, let&apos;s build together.
+          Whether you are looking for an AI/ML Engineer with enterprise GenAI delivery experience, document intelligence expertise, or a cross-functional builder who understands regulated environments, let&apos;s build together.
         </p>
         
         <div className={styles.btnGroup}>

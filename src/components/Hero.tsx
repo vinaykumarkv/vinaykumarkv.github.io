@@ -65,8 +65,8 @@ export default function Hero() {
           type: "system",
           content: (
             <div className={styles.sysOutput}>
-              I build AI systems for regulated environments, including audit-anomaly detection, NLP location extraction, and GenAI tooling for pharmaceutical operations.
-              With 10+ years across product delivery, onsite leadership, and AI engineering, I connect business risk, regulatory expectations, and production-ready models.
+              I build AI systems for regulated environments, including audit-anomaly detection, document intelligence, and enterprise GenAI tooling for pharmaceutical operations.
+              With 9+ years of IT experience and 3+ years focused on AI/ML delivery, I connect business risk, GxP expectations, and production-ready models across global manufacturing programs.
             </div>
           ),
         });
@@ -200,7 +200,7 @@ export default function Hero() {
             <span className={styles.titleGlow}>GxP, GenAI &amp; Audit Intelligence</span>
           </h1>
           <p className={styles.subtitle}>
-            I am <span className={styles.highlightText}>Vinay Kumar K.V</span>, an AI/ML engineer with 10+ years experience delivering solutions at TCS, building NLP and GenAI agentic systems for regulated pharmaceutical environments.
+            I am <span className={styles.highlightText}>Vinay Kumar K.V</span>, an AI/ML engineer with 9+ years of IT experience and 3+ years designing and deploying enterprise AI solutions for global manufacturing and quality operations.
           </p>
           <div className={styles.ctaGroup}>
             <a href="#about" className="cyber-btn">

@@ -26,16 +26,16 @@ export default function About() {
       icon: <Brain size={16} />,
       skills: [
         {
-          name: "Hierarchical NLP Models",
+          name: "Hierarchical NLP & Location Models",
           level: 94,
           label: "Advanced",
-          detail: "Built location-prediction models from unstructured records for audit anomaly workflows.",
+          detail: "Built location-prediction models from unstructured records to support audit anomaly workflows and process-gap detection.",
         },
         {
-          name: "Classification & Experimentation",
+          name: "Classification, Tuning & Experimentation",
           level: 90,
           label: "Expert",
-          detail: "Developed YAML-driven experimentation pipelines for feature, dataset, and model swap workflows.",
+          detail: "Developed model pipelines with hyperparameter tuning, evaluation datasets, and YAML-driven experimentation for feature and model swaps.",
         },
       ],
     },
@@ -47,13 +47,13 @@ export default function About() {
           name: "LLM-Based Agent Systems",
           level: 95,
           label: "Production-Ready",
-          detail: "Extended systems with Python-based LLM agent architectures for process-gap and deviation analysis.",
+          detail: "Extended AI solutions with Python-based LLM agent workflows for process-gap detection, triage, and investigation support.",
         },
         {
-          name: "Document Intelligence Evaluation",
+          name: "Document Intelligence & RAG",
           level: 92,
           label: "Expert",
-          detail: "Compared Azure Document Intelligence and GPT-4o Vision for regulatory document automation across global sites.",
+          detail: "Compared Azure Document Intelligence, prompt-based extraction, and retrieval-enabled workflows for regulatory document automation.",
         },
       ],
     },
@@ -62,16 +62,16 @@ export default function About() {
       icon: <Database size={16} />,
       skills: [
         {
-          name: "Python Automation & APIs",
+          name: "Azure MLOps & API Delivery",
           level: 93,
           label: "Senior Developer",
-          detail: "Built XML signature verification utilities, Jira analytics automation, and production utilities in Python.",
+          detail: "Deployed AI applications in Azure Container Apps, integrated PostgreSQL and Blob Storage, and built robust document-processing APIs. ",
         },
         {
           name: "GxP Delivery Enablement",
           level: 88,
           label: "Advanced",
-          detail: "Worked across URS/SRS/UAT, validation, and digital platform delivery in regulated environments.",
+          detail: "Worked across URS/SRS/UAT, validation, and digital platform delivery in regulated environments, balancing agility with compliance.",
         },
       ],
     },
@@ -110,11 +110,11 @@ export default function About() {
         {/* Left Side: Professional Narrative */}
         <div className={styles.bioBlock}>
           <p className={styles.introText}>
-            I build AI systems that operate in the real world, including <strong>audit-anomaly detection, hierarchical NLP extraction, and GenAI tooling in regulated pharmaceutical environments</strong>.
+            I build AI systems that operate in the real world, including <strong>audit-anomaly detection, document intelligence, and GenAI tooling in regulated pharmaceutical environments</strong>.
           </p>
 
           <p className={styles.introText}>
-            With 10+ years at Tata Consultancy Services, I have moved from infrastructure operations into product engineering, onsite leadership, and now full-time AI/ML delivery. I am comfortable translating complex regulatory and operational needs into production-ready models and experiments.
+            With 9+ years of IT experience and 3+ years focused on AI/ML delivery at Tata Consultancy Services, I have moved from infrastructure operations into product engineering, onsite leadership, and enterprise-scale AI implementation. I translate complex regulatory and operational needs into production-ready models, evaluation frameworks, and trustworthy automation.
           </p>
 
           <div className={styles.highlightBox}>
@@ -133,9 +133,9 @@ export default function About() {
 
             <div className={styles.pillarCard}>
               <Award className={styles.pillarIcon} size={24} />
-              <h3 className={styles.pillarTitle}>Doctoral AI Research</h3>
+              <h3 className={styles.pillarTitle}>Professional Doctoral Studies</h3>
               <p className={styles.pillarDesc}>
-                Conducting DBA research in Walsh College on robust safety-critical autonomous systems.
+                Pursuing professional doctoral studies in AI and ML with focus on applied research, intelligent systems, and measurable business value.
               </p>
             </div>
           </div>
