@@ -18,63 +18,99 @@ export default function Career() {
   const roles: RoleDetails[] = [
     {
       id: "ai-engineer",
-      role: "AI Engineer - AI and ML",
+      role: "AI & Machine Learning Engineer",
       company: "Tata Consultancy Services",
       dates: "June 2026 - Present",
       location: "London, United Kingdom",
-      badges: ["AI Agents", "Process Gap Detection", "LLM Evaluation", "GxP Delivery"],
+      badges: ["Multi-Agent AI", "NLP & LLM", "Anomaly Detection", "GxP Delivery"],
       bullets: [
         {
-          title: "Live AI Platform Delivery",
-          text: "Developing and integrating advanced machine learning models and multi-agent systems designed to proactively detect process gaps across global operations and flag audit risk early.",
+          title: "Location Code Prediction",
+          text: "Built NLP-focused features using TF-IDF, Bag-of-Words, Word2Vec and LLM-derived candidates; benchmarked Gradient Boosting, XGBoost and LightGBM, and used LoRA fine-tuning plus RAG over a term dictionary where labels lacked ground truth.",
         },
         {
-          title: "Product Consultation",
-          text: "Retained as a strategic advisor for the flagship COA digitalisation product, helping guide technical direction and product strategy for enterprise deployment.",
+          title: "Observability & Evaluation",
+          text: "Refactored the codebase to integrate Weave tracing for function-level observability, created an evaluation dataset, and ran systematic model evaluation.",
         },
         {
-          title: "Experimentation & Evaluation",
-          text: "Refactored model tracing and created evaluation datasets in Weave to support repeatable LLM observability, prompt assessment, and model improvement cycles.",
+          title: "Anomaly Detection",
+          text: "Co-developed a Poisson CUSUM and Mann-Kendall model to flag abnormal event volumes by location; continue to provide advisory support to the COA Digitalisation team.",
         },
       ],
     },
     {
-      id: "systems-analyst",
-      role: "Systems Analyst and Onsite Lead - AI and Automation",
+      id: "coa-lead",
+      role: "IT Business Analyst & Onsite Delivery Lead",
       company: "Tata Consultancy Services",
-      dates: "September 2019 - June 2026",
+      dates: "May 2024 - June 2026",
       location: "London, United Kingdom & Bengaluru, India",
-      badges: ["Document Intelligence", "Azure AI", "GxP Validation", "Digital Transformation"],
+      badges: ["£13M Programme", "26-Person Team", "Generative AI", "Pharma"],
       bullets: [
         {
-          title: "Development & Technical Architecture",
-          text: "Designed and developed an AI-powered document parser that converted scanned PDFs into structured JSON with field-level confidence scores, deployed using Azure Container Apps with PostgreSQL and Blob Storage for auditability.",
+          title: "Programme Leadership",
+          text: "Led a 26-person team delivering a fixed-price £13M digital transformation programme end-to-end, from requirements and URS/SRS through design specification and business-logic definition.",
         },
         {
-          title: "Technical Governance",
-          text: "Led code reviews and R&D activities using Azure Document Intelligence templates, regex extraction techniques, and workflow design to balance agile delivery with GxP compliance.",
+          title: "Generative AI Prototype",
+          text: "Designed a two-agent Extractor and Reviewer/Critic architecture that converts PDFs to organisation-standard JSON, scores field confidence, and logs I/O pairs for auditability; containerised the demo on Azure Container Registry with development auto-scaling.",
         },
         {
-          title: "Commercial & Leadership",
-          text: "Led the COA Digitalisation fixed-budget programme with a 26-member cross-functional team, delivering 3 iterative releases across UK and US manufacturing sites and scaling the Quality Hub account from a £150k to £350k annual programme.",
+          title: "Automation & Problem Solving",
+          text: "Reduced manual review and approval from 10 days to 2 days, built XML digital-signature, time-conversion and JIRA/Outlook sprint-reporting solutions, and ported the ASTM signer across Python, Java and .NET.",
+        },
+      ],
+    },
+    {
+      id: "batch-release-hub",
+      role: "IT Business Analyst & Scrum Master",
+      company: "Tata Consultancy Services",
+      dates: "August 2020 - May 2024",
+      location: "Bengaluru, India & London, United Kingdom",
+      badges: ["GxP Environment", "Scrum", "Stakeholder Management", "Python"],
+      bullets: [
+        {
+          title: "Product Delivery",
+          text: "Produced end-to-end application lifecycle documentation in a GxP-regulated environment and defined business rules and logical workflows from data analysis.",
+        },
+        {
+          title: "Team & Revenue Growth",
+          text: "Grew the delivery team from 4 to 12 members while running Scrum ceremonies, improving team efficiency, and contributing to project revenue growth from £150K to £350K.",
+        },
+        {
+          title: "Technical Support",
+          text: "Performed code reviews, supported bug fixes, and built Python scripts to load data from shared locations into the database; moved onsite to support deployment across multiple sites.",
+        },
+      ],
+    },
+    {
+      id: "business-analyst",
+      role: "Business Analyst",
+      company: "Tata Consultancy Services",
+      dates: "September 2019 - August 2020",
+      location: "Bengaluru, India",
+      badges: ["SOPs", "Agile Compliance", "Process Analysis"],
+      bullets: [
+        {
+          title: "Process Documentation",
+          text: "Documented standard operating procedures for 7+ technical teams across Storage & Backup, Linux, Windows, Database, Service Support and Network functions.",
+        },
+        {
+          title: "Agile Compliance",
+          text: "Monitored Agile compliance across the project and reported progress to the Delivery Manager.",
         },
       ],
     },
     {
       id: "mba-sabbatical",
-      role: "Sabbatical for Full-time MBA",
-      company: "Bengaluru, India",
-      dates: "October 2017 - September 2019",
+      role: "Sabbatical - Full-Time MBA",
+      company: "MSRIT",
+      dates: "2017 - 2019",
       location: "Bengaluru, India",
-      badges: ["Business Analytics", "Operational Strategy", "Market Research"],
+      badges: ["MBA", "Marketing", "Business Strategy"],
       bullets: [
         {
-          title: "Academic Focus",
-          text: "Advanced core competencies in business analytics, operational strategy, and market research while completing full-time MBA studies.",
-        },
-        {
-          title: "Leadership Development",
-          text: "Strengthened decision-making, commercial thinking, and cross-functional stakeholder alignment to support technology-led business transformation.",
+          title: "Full-Time Study",
+          text: "Completed a full-time MBA in Marketing at M S Ramaiah Institute of Technology during a two-year career sabbatical.",
         },
       ],
     },
@@ -84,15 +120,15 @@ export default function Career() {
       company: "Tata Consultancy Services",
       dates: "October 2015 - October 2017",
       location: "Chennai, India",
-      badges: ["Infrastructure Operations", "Backup & Restore", "Windows/Linux Systems"],
+      badges: ["Infrastructure Operations", "Backup & Restore", "Shell Scripting"],
       bullets: [
         {
-          title: "Enterprise Backup & Restore",
-          text: "Managed server backup and restore operations across Linux and Windows environments, ensuring data integrity and operational resilience.",
+          title: "Backup Operations",
+          text: "Ensured reliable backup operations across servers and databases through tiered T1-to-T3 replication and archival, including tape libraries and Iron Mountain archiving.",
         },
         {
-          title: "Operational Reliability",
-          text: "Supported SLA-driven infrastructure operations, performing restores and incident response to maintain system availability and customer trust.",
+          title: "Automation",
+          text: "Automated manual backup processes using shell scripting.",
         },
       ],
     },

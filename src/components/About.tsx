@@ -22,20 +22,20 @@ export default function About() {
 
   const skillCategories: SkillCategory[] = [
     {
-      title: "Machine Learning & NLP",
+      title: "Machine Learning & Data",
       icon: <Brain size={16} />,
       skills: [
         {
-          name: "Hierarchical NLP & Location Models",
+          name: "Classical ML & Feature Engineering",
           level: 94,
           label: "Advanced",
-          detail: "Built location-prediction models from unstructured records to support audit anomaly workflows and process-gap detection.",
+          detail: "EDA, feature engineering, classification, clustering, dimensionality reduction and model tuning with scikit-learn, XGBoost and LightGBM.",
         },
         {
-          name: "Classification, Tuning & Experimentation",
+          name: "Data Engineering & Analytics",
           level: 90,
           label: "Expert",
-          detail: "Developed model pipelines with hyperparameter tuning, evaluation datasets, and YAML-driven experimentation for feature and model swaps.",
+          detail: "Python, SQL, Pandas, NumPy, Seaborn and PySpark for analysis, transformation and repeatable data workflows.",
         },
       ],
     },
@@ -44,16 +44,16 @@ export default function About() {
       icon: <Cpu size={16} />,
       skills: [
         {
-          name: "LLM-Based Agent Systems",
+          name: "LLM Applications & Agents",
           level: 95,
           label: "Production-Ready",
-          detail: "Extended AI solutions with Python-based LLM agent workflows for process-gap detection, triage, and investigation support.",
+          detail: "Built RAG and multi-agent systems with LangChain, OpenAI APIs, Hugging Face, tool/function definitions and MCP servers.",
         },
         {
-          name: "Document Intelligence & RAG",
+          name: "Fine-tuning & Evaluation",
           level: 92,
           label: "Expert",
-          detail: "Compared Azure Document Intelligence, prompt-based extraction, and retrieval-enabled workflows for regulatory document automation.",
+          detail: "Fine-tuned Llama 3.2 with LoRA, created golden datasets with SMEs, and used Weave tracing for systematic evaluation.",
         },
       ],
     },
@@ -62,16 +62,16 @@ export default function About() {
       icon: <Database size={16} />,
       skills: [
         {
-          name: "Azure MLOps & API Delivery",
+          name: "Deep Learning",
           level: 93,
           label: "Senior Developer",
-          detail: "Deployed AI applications in Azure Container Apps, integrated PostgreSQL and Blob Storage, and built robust document-processing APIs. ",
+          detail: "PyTorch, TensorFlow and Keras, including neural networks, CNN image classification and LSTM/RNN concepts.",
         },
         {
-          name: "GxP Delivery Enablement",
+          name: "Cloud & Platform Delivery",
           level: 88,
           label: "Advanced",
-          detail: "Worked across URS/SRS/UAT, validation, and digital platform delivery in regulated environments, balancing agility with compliance.",
+          detail: "Microsoft Azure, Azure Container Registry, Databricks and GitHub Copilot for enterprise AI delivery.",
         },
       ],
     },
@@ -80,16 +80,16 @@ export default function About() {
       icon: <ShieldCheck size={16} />,
       skills: [
         {
-          name: "Cross-Functional Delivery",
+          name: "Regulated-Industry Delivery",
           level: 96,
           label: "SME",
-          detail: "Led requirements conversations with QA, Regulatory, Operations, and IT stakeholders across sites.",
+          detail: "Translate GxP/pharma business problems into deployed technical solutions while working with QA, Regulatory, Operations and IT stakeholders.",
         },
         {
-          name: "Agile & Scrum Leadership",
+          name: "Leadership & Scrum",
           level: 90,
           label: "PSM I",
-          detail: "Managed sprint planning, release coordination, backlog ownership, and stakeholder communication.",
+          detail: "Led a 26-person team on a £13M transformation programme and hold Professional Scrum Master I certification.",
         },
       ],
     },
@@ -102,40 +102,40 @@ export default function About() {
   return (
     <section id="about" className={styles.aboutSection}>
       <div className="section-header">
-        <h2 className="section-title">Bridging Strategy and AI Systems</h2>
-        <p className="section-subtitle">The AI Engineer Who Works Across Business, Risk, and Delivery</p>
+        <h2 className="section-title">AI Engineering With Delivery Context</h2>
+        <p className="section-subtitle">Hands-on machine learning, stakeholder leadership, and regulated-industry experience</p>
       </div>
 
       <div className={styles.layout}>
         {/* Left Side: Professional Narrative */}
         <div className={styles.bioBlock}>
           <p className={styles.introText}>
-            I build AI systems that operate in the real world, including <strong>audit-anomaly detection, document intelligence, and GenAI tooling in regulated pharmaceutical environments</strong>.
+            AI/ML Engineer and Data Scientist building <strong>multi-agent architectures, NLP/LLM pipelines, classical ML models, and anomaly detection solutions</strong> for real business problems.
           </p>
 
           <p className={styles.introText}>
-            With 9+ years of IT experience and 3+ years focused on AI/ML delivery at Tata Consultancy Services, I have moved from infrastructure operations into product engineering, onsite leadership, and enterprise-scale AI implementation. I translate complex regulatory and operational needs into production-ready models, evaluation frameworks, and trustworthy automation.
+            I have spent 11 years at Tata Consultancy Services, with 9 years of active delivery and a 2-year full-time MBA sabbatical. My path spans infrastructure operations, business analysis, Scrum Master leadership, onsite delivery, and hands-on AI/ML engineering for a UK pharmaceutical account.
           </p>
 
           <div className={styles.highlightBox}>
-            <div className={styles.highlightTitle}>Core Professional Differentiator</div>
-            What I bring that most AI engineers do not: the ability to work on both sides of the table, leading requirements conversations with QA, Regulatory, and Operations teams while also building the models, pipelines, and agent architectures behind the solution.
+            <div className={styles.highlightTitle}>Professional Differentiator</div>
+            I combine technical AI/ML delivery with the ability to translate regulated-industry requirements into practical products, having led requirements, design, delivery, and stakeholder alignment across the full lifecycle.
           </div>
 
           <div className={styles.pillars}>
             <div className={styles.pillarCard}>
               <ShieldCheck className={styles.pillarIcon} size={24} />
-              <h3 className={styles.pillarTitle}>GxP Compliance</h3>
+              <h3 className={styles.pillarTitle}>Pharma &amp; GxP</h3>
               <p className={styles.pillarDesc}>
-                Expert in pharmaceutical validation standards. Experienced in authoring full URS, SRS, and UAT protocols.
+                Experience delivering software and AI solutions in a GxP-regulated pharmaceutical environment, including URS/SRS and validation workflows.
               </p>
             </div>
 
             <div className={styles.pillarCard}>
               <Award className={styles.pillarIcon} size={24} />
-              <h3 className={styles.pillarTitle}>Professional Doctoral Studies</h3>
+              <h3 className={styles.pillarTitle}>Applied AI Research</h3>
               <p className={styles.pillarDesc}>
-                Pursuing professional doctoral studies in AI and ML with focus on applied research, intelligent systems, and measurable business value.
+                DBA in AI &amp; ML in progress through Walsh College via Great Learning, alongside the Year 1 PGP in AI &amp; ML at McCombs School of Business, UT Austin.
               </p>
             </div>
           </div>

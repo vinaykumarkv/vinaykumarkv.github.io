@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./Education.module.css";
-import { GraduationCap, FileText, Calendar, MapPin, Award } from "../lucide-shim";
+import { GraduationCap, Calendar, MapPin, Award } from "../lucide-shim";
 
 export default function Education() {
   return (
@@ -13,28 +13,23 @@ export default function Education() {
       </div>
 
       <div className={styles.layout}>
-        {/* Left: Publications */}
+        {/* Left: Certifications */}
         <div>
           <div className={styles.pubCard}>
             <div className={styles.pubHeader}>
-              <FileText size={16} />
-              Featured Publication
+              <Award size={16} />
+              Certifications
             </div>
-            <h3 className={styles.pubTitle}>
-              VATSA: Video, Audio, Text, Sensory, Action - A Unified Five-Modality Architecture for Human-Level Perception and Action
-            </h3>
-            <div className={styles.pubAuthors}>
-              Authors: <span className={styles.pubAuthorHighlight}>Vinay Kumar .K .V</span>
-            </div>
-            <p className={styles.pubAbstract}>
-              <strong>Abstract:</strong> This research proposes a unified multimodal neural network model tailored for safety-critical robotics environments. By combining visual bounding boxes, audio spectrogram converters, text goal parsers, and spatial sensor networks, the architecture drives real-time action instructions. The model integrates the SAMOS routing mechanism, analyzing collision scores dynamically to restrict motor torque velocities in proximity to human operators, providing a robust validation pathway for GxP-regulated deployment.
-            </p>
-            <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-              <span className="cyber-btn cyber-btn-purple" style={{ fontSize: "0.75rem", padding: "0.5rem 1rem" }}>
-                <Award size={14} /> Concept Paper
-              </span>
-            </div>
+            <h3 className={styles.pubTitle}>Professional credentials</h3>
+            <ul className={styles.certificationList}>
+              <li>Data Scientist Professional - DataCamp, 2026</li>
+              <li>Data Engineer Professional - DataCamp, 2025</li>
+              <li>Building LLM Applications with Prompt Engineering - NVIDIA, 2025</li>
+              <li>Professional Scrum Master (PSM I) - Scrum.org, 2023</li>
+              <li>DevOps Engineer - Edureka, 2021</li>
+            </ul>
           </div>
+
         </div>
 
         {/* Right: Education Timeline */}
@@ -50,15 +45,15 @@ export default function Education() {
               <div className={styles.eduMeta}>
                 <span>
                   <Calendar size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  2025 - Dec 2028
+                  2025 - 2028 (in progress)
                 </span>
                 <span>
                   <MapPin size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  Remote / US-based
+                  Remote
                 </span>
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-                Focus: AI & Machine Learning, with research interest in autonomous systems in safety-critical environments.
+                DBA in AI & ML via Great Learning.
               </p>
             </div>
           </div>
@@ -74,15 +69,15 @@ export default function Education() {
               <div className={styles.eduMeta}>
                 <span>
                   <Calendar size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  In progress
+                  Currently in progress
                 </span>
                 <span>
                   <MapPin size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
-                  Remote / US-based
+                  Remote
                 </span>
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-                Focus: Applied AI & ML with a business-oriented lens for real-world deployment.
+                Year 1 PGP in AI & ML; currently top of batch.
               </p>
             </div>
           </div>
@@ -106,7 +101,7 @@ export default function Education() {
                 </span>
               </div>
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
-                Focus: Marketing, with a strong grounding in business strategy and stakeholder communication.
+                Major: Marketing.
               </p>
             </div>
           </div>
@@ -132,6 +127,27 @@ export default function Education() {
               <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.5rem" }}>
                 Major: Electronics & Communication Engineering.
               </p>
+            </div>
+          </div>
+
+          {/* PVP Polytechnic Diploma */}
+          <div className={styles.eduItem}>
+            <div className={styles.eduIconWrapper}>
+              <GraduationCap size={20} />
+            </div>
+            <div className={styles.eduContent}>
+              <h3 className={styles.eduDegree}>Diploma in Electronics &amp; Communication Engineering</h3>
+              <p className={styles.eduSchool}>PVP Polytechnic</p>
+              <div className={styles.eduMeta}>
+                <span>
+                  <Calendar size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
+                  2009 - 2012
+                </span>
+                <span>
+                  <MapPin size={12} style={{ display: "inline", marginRight: "4px", verticalAlign: "middle" }} />
+                  India
+                </span>
+              </div>
             </div>
           </div>
         </div>

@@ -11,9 +11,9 @@ export default function Footer() {
     <footer className={styles.footerSection}>
       {/* Interactive CTA Box */}
       <div className={styles.contactCard}>
-        <h2 className={styles.cardTitle}>Deploy Secure AI Systems</h2>
+        <h2 className={styles.cardTitle}>Let&apos;s Build Applied AI</h2>
         <p className={styles.cardDesc}>
-          Whether you are looking for an AI/ML Engineer with enterprise GenAI delivery experience, document intelligence expertise, or a cross-functional builder who understands regulated environments, let&apos;s build together.
+          AI/ML engineering, LLM applications, data science, and delivery leadership for practical solutions in regulated and enterprise environments.
         </p>
         
         <div className={styles.btnGroup}>

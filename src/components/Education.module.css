@@ -76,6 +76,13 @@
   margin-bottom: 1.5rem;
 }
 
+.certificationList {
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
 /* Education List */
 .eduList {
   display: flex;

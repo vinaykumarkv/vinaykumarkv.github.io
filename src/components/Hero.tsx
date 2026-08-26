@@ -49,8 +49,8 @@ export default function Hero() {
               <span className={styles.helpDesc}>Profile bio & key differentiators</span>
               <span className={styles.helpCmd}>skills</span>
               <span className={styles.helpDesc}>View technical capabilities matrix</span>
-              <span className={styles.helpCmd}>vatsa</span>
-              <span className={styles.helpDesc}>Query 5-modality AI architecture specs</span>
+              <span className={styles.helpCmd}>projects</span>
+              <span className={styles.helpDesc}>View selected AI/ML projects and repositories</span>
               <span className={styles.helpCmd}>contact</span>
               <span className={styles.helpDesc}>Display connection links & email</span>
               <span className={styles.helpCmd}>clear</span>
@@ -91,26 +91,22 @@ export default function Hero() {
         });
         break;
 
-      case "vatsa":
+      case "projects":
         newLogs.push({
           type: "system",
           content: (
             <div className={styles.sysOutput}>
-              <strong>[PROJECT VATSA - 5 MODALITY ARCHITECTURE]</strong>
+              <strong>[SELECTED PROJECTS]</strong>
               <br />
-              A unified system for embodied robotics intelligence processing five distinct streams:
+              Agent Alpha :: Field-technician co-pilot for equipment diagnostics.
               <br />
-              1. <strong>Video</strong>: 96.31% accuracy on CIFAR-10, real-time 22 FPS.
+              Medical RAG Agent :: Merck Medical Manual-grounded question answering.
               <br />
-              2. <strong>Audio</strong>: 70.25% on ESC-50 via Wav2Vec2 transfer learning.
+              C5Tree :: Pure-Python, scikit-learn-compatible C5.0 decision tree.
               <br />
-              3. <strong>Text</strong>: LLM output routing simulator with safety-weights.
+              XML Digital Signer :: ASTM-standard signer and verifier in Python, .NET and Java.
               <br />
-              4. <strong>Sensory</strong>: Physical state metrics (spatial data feeds).
-              <br />
-              5. <strong>Action</strong>: Robotic actuation pathways.
-              <br />
-              *Proposed <strong>SAMOS</strong>: Safety-weighted output routing mechanism for parallel generation.
+              See the Projects section for repository links and academic work.
             </div>
           ),
         });
@@ -164,8 +160,8 @@ export default function Hero() {
           <a href="#about" className={styles.navLink}>
             <BrainCircuit size={14} /> About
           </a>
-          <a href="#vatsa" className={styles.navLink}>
-            <Server size={14} /> VATSA
+          <a href="#projects" className={styles.navLink}>
+            <Server size={14} /> Projects
           </a>
           <a href="#journey" className={styles.navLink}>
             Journey
@@ -197,10 +193,10 @@ export default function Hero() {
           </div>
           <h1 className={styles.title}>
             AI/ML Engineer | Forward Deployed Engineer<br />
-            <span className={styles.titleGlow}>GxP, GenAI &amp; Audit Intelligence</span>
+            <span className={styles.titleGlow}>RAG, Agents &amp; Applied ML</span>
           </h1>
           <p className={styles.subtitle}>
-            I am <span className={styles.highlightText}>Vinay Kumar K.V</span>, an AI/ML engineer with 9+ years of IT experience and 3+ years designing and deploying enterprise AI solutions for global manufacturing and quality operations.
+            I am <span className={styles.highlightText}>Vinay Kumar Kengeri Vijaya Kumar</span>, an AI/ML Engineer and Data Scientist with 11 years at Tata Consultancy Services, including hands-on AI/ML delivery for a UK pharmaceutical client.
           </p>
           <div className={styles.ctaGroup}>
             <a href="#about" className="cyber-btn">
@@ -262,7 +258,7 @@ export default function Hero() {
               [run: skills]
             </button>
             <button className={styles.quickChip} onClick={() => handleCommand("vatsa")}>
-              [run: vatsa]
+              [run: projects]
             </button>
             <button className={styles.quickChip} onClick={() => handleCommand("contact")}>
               [run: contact]
