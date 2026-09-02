@@ -192,8 +192,8 @@ export default function Hero() {
             <span className={styles.neonDot}></span> System Status: Online
           </div>
           <h1 className={styles.title}>
-            AI/ML Engineer | Forward Deployed Engineer<br />
-            <span className={styles.titleGlow}>RAG, Agents &amp; Applied ML</span>
+            AI/ML Engineer | Data Scientist<br />
+            <span className={styles.titleGlow}>RAG, Agents, Data Science &amp; Applied ML</span>
           </h1>
           <p className={styles.subtitle}>
             I am <span className={styles.highlightText}>Vinay Kumar Kengeri Vijaya Kumar</span>, an AI/ML Engineer and Data Scientist with 11 years at Tata Consultancy Services, including hands-on AI/ML delivery for a UK pharmaceutical client.
