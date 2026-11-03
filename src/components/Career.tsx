@@ -66,15 +66,11 @@ export default function Career() {
       company: "Tata Consultancy Services",
       dates: "August 2020 - May 2024",
       location: "Bengaluru, India & London, United Kingdom",
-      badges: ["GxP Environment", "Scrum", "Stakeholder Management", "Python"],
+      badges: ["GxP Environment", "Stakeholder Management", "Python"],
       bullets: [
         {
           title: "Product Delivery",
           text: "Produced end-to-end application lifecycle documentation in a GxP-regulated environment and defined business rules and logical workflows from data analysis.",
-        },
-        {
-          title: "Team & Revenue Growth",
-          text: "Grew the delivery team from 4 to 12 members while running Scrum ceremonies, improving team efficiency, and contributing to project revenue growth from £150K to £350K.",
         },
         {
           title: "Technical Support",

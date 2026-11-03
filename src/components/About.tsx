@@ -76,8 +76,6 @@ export default function About() {
       ],
     },
     {
-      title: "Leadership & Stakeholder Alignment",
-      icon: <ShieldCheck size={16} />,
       skills: [
         {
           name: "Regulated-Industry Delivery",
@@ -114,7 +112,7 @@ export default function About() {
           </p>
 
           <p className={styles.introText}>
-            I have spent 11 years at Tata Consultancy Services, with 9 years of active delivery and a 2-year full-time MBA sabbatical. My path spans infrastructure operations, business analysis, Scrum Master leadership, onsite delivery, and hands-on AI/ML engineering for a UK pharmaceutical account.
+            I have spent 11 years at Tata Consultancy Services, with 9 years of active delivery and a 2-year full-time MBA sabbatical. My path spans infrastructure operations, business analysis, leadership, onsite delivery, and hands‑on AI/ML engineering for a UK pharmaceutical account.
           </p>
 
           <div className={styles.highlightBox}>
