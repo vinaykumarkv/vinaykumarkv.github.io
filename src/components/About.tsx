@@ -76,22 +76,19 @@ export default function About() {
       ],
     },
     {
-      skills: [
-        {
-          name: "Regulated-Industry Delivery",
-          level: 96,
-          label: "SME",
-          detail: "Translate GxP/pharma business problems into deployed technical solutions while working with QA, Regulatory, Operations and IT stakeholders.",
-        },
-        {
-          name: "Leadership & Scrum",
-          level: 90,
-          label: "PSM I",
-          detail: "Led a 26-person team on a £13M transformation programme and hold Professional Scrum Master I certification.",
-        },
-      ],
+      title: "Regulated Industry Delivery",
+  icon: <ShieldCheck size={16} />,
+  skills: [
+    {
+      name: "Regulated-Industry Delivery",
+      level: 96,
+      label: "SME",
+      detail:
+        "Translate GxP/pharma business problems into deployed technical solutions while working with QA, Regulatory, Operations and IT stakeholders.",
     },
-  ];
+  ],
+},
+  ]
 
   const handleSkillClick = (skillName: string) => {
     setSelectedSkill(selectedSkill === skillName ? null : skillName);
