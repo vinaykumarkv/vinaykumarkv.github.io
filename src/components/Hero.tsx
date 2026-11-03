@@ -119,13 +119,17 @@ export default function Hero() {
             <div className={styles.sysOutput}>
               Email: <a href="mailto:vinaykumar.kv@outlook.com">vinaykumar.kv@outlook.com</a>
               <br />
-              LinkedIn: <a href="https://linkedin.com/in/vinay-kumar-k-v" target="_blank" rel="noopener noreferrer">linkedin.com/in/vinay-kumar-k-v</a>
+                    Phone (UK): <a href="tel:+447424696464">+44 7424 696464</a>
               <br />
-              GitHub/Portfolio: <a href="https://github.com/vinaykumarkv" target="_blank" rel="noopener noreferrer">github.com/vinaykumarkv</a>
-            </div>
-          ),
-        });
-        break;
+                    Phone (India/WhatsApp): <a href="tel:+918792973874">+91 8792 973874</a>
+                    <br />
+                    LinkedIn: <a href="https://linkedin.com/in/vinay-kumar-k-v" target="_blank" rel="noopener noreferrer">linkedin.com/in/vinay-kumar-k-v</a>
+                    <br />
+                    GitHub/Portfolio: <a href="https://github.com/vinaykumarkv" target="_blank" rel="noopener noreferrer">github.com/vinaykumarkv</a>
+                  </div>
+                ),
+              });
+              break;
 
       case "clear":
         setLogs([]);
@@ -192,11 +196,11 @@ export default function Hero() {
             <span className={styles.neonDot}></span> System Status: Online
           </div>
           <h1 className={styles.title}>
-            AI/ML Engineer | Data Scientist<br />
+                      AI Engineer | GenAI & Agentic Systems | ML Engineer | Data Scientist<br />
             <span className={styles.titleGlow}>RAG, Agents, Data Science &amp; Applied ML</span>
           </h1>
           <p className={styles.subtitle}>
-            I am <span className={styles.highlightText}>Vinay Kumar Kengeri Vijaya Kumar</span>, an AI/ML Engineer and Data Scientist with 11 years at Tata Consultancy Services, including hands-on AI/ML delivery for a UK pharmaceutical client.
+            I am <span className={styles.highlightText}>Vinay Kumar K V</span>, an AI Engineer | GenAI & Agentic Systems | ML Engineer | Data Scientist with 11 years at Tata Consultancy Services, including hands‑on AI/ML delivery for a UK pharmaceutical client.
           </p>
           <div className={styles.ctaGroup}>
             <a href="#about" className="cyber-btn">

@@ -110,7 +110,7 @@ export default function About() {
         {/* Left Side: Professional Narrative */}
         <div className={styles.bioBlock}>
           <p className={styles.introText}>
-            AI/ML Engineer and Data Scientist building <strong>multi-agent architectures, NLP/LLM pipelines, classical ML models, and anomaly detection solutions</strong> for real business problems.
+            AI Engineer | GenAI & Agentic Systems | ML Engineer | Data Scientist building <strong>multi-agent architectures, NLP/LLM pipelines, classical ML models, and anomaly detection solutions</strong> for real business problems.
           </p>
 
           <p className={styles.introText}>

@@ -18,7 +18,7 @@ export default function Career() {
   const roles: RoleDetails[] = [
     {
       id: "ai-engineer",
-      role: "AI & Machine Learning Engineer",
+      role: "AI & Machine Learning Engineer | Inspection Readiness & Oversight Programme",
       company: "Tata Consultancy Services",
       dates: "June 2026 - Present",
       location: "London, United Kingdom",
@@ -40,7 +40,7 @@ export default function Career() {
     },
     {
       id: "coa-lead",
-      role: "IT Business Analyst & Onsite Delivery Lead",
+      role: "AI Engineer & Lead Analyst - COA Digitalisation Programme",
       company: "Tata Consultancy Services",
       dates: "May 2024 - June 2026",
       location: "London, United Kingdom & Bengaluru, India",
@@ -62,7 +62,7 @@ export default function Career() {
     },
     {
       id: "batch-release-hub",
-      role: "IT Business Analyst & Scrum Master",
+      role: "Analyst - Batch Release Hub",
       company: "Tata Consultancy Services",
       dates: "August 2020 - May 2024",
       location: "Bengaluru, India & London, United Kingdom",
@@ -84,7 +84,7 @@ export default function Career() {
     },
     {
       id: "business-analyst",
-      role: "Business Analyst",
+      role: "Analyst - Agile Compliance & SOPs Programme",
       company: "Tata Consultancy Services",
       dates: "September 2019 - August 2020",
       location: "Bengaluru, India",

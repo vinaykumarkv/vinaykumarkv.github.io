@@ -40,30 +40,6 @@ const projects: Project[] = [
     href: "https://github.com/vinaykumarkv/XMLDigSignerASTM_Python",
   },
   {
-    title: "SuperKart",
-    period: "Jul 2026",
-    description: "Sales-forecasting model for a multi-city retail chain, served through a Flask API in a Docker container.",
-    tags: ["Forecasting", "Flask", "Docker"],
-  },
-  {
-    title: "HelmNet",
-    period: "Jun 2026",
-    description: "CNN image classifier using TensorFlow/Keras and VGG-16 transfer learning to detect worker helmet compliance.",
-    tags: ["Computer Vision", "CNN", "Transfer Learning"],
-  },
-  {
-    title: "EasyVisa",
-    period: "Apr 2026",
-    description: "Seven tuned classification models predicting US visa approval outcomes, with imbalance handling and profile-based recommendations.",
-    tags: ["Classification", "Ensembles", "Imbalanced Data"],
-  },
-  {
-    title: "Personal Loan Campaign",
-    period: "Mar 2026",
-    description: "Classification and clustering models identifying customer attributes that drive personal-loan conversion.",
-    tags: ["Classification", "Clustering", "Customer Analytics"],
-  },
-  {
     title: "Healthcare Cost Prediction",
     period: "Hackathon",
     description: "Linear regression model predicting annual healthcare costs from demographic, health and lifestyle features; finished top three by RMSE.",

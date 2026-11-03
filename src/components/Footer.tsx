@@ -13,7 +13,7 @@ export default function Footer() {
       <div className={styles.contactCard}>
         <h2 className={styles.cardTitle}>Let&apos;s Build Applied AI</h2>
         <p className={styles.cardDesc}>
-          AI/ML engineering, LLM applications, data science, and delivery leadership for practical solutions in regulated and enterprise environments.
+                  AI Engineer | GenAI &amp; Agentic Systems | ML Engineer | Data Scientist delivering enterprise‑grade AI solutions.
         </p>
         
         <div className={styles.btnGroup}>
@@ -38,7 +38,7 @@ export default function Footer() {
       {/* Footer Meta bottom bar */}
       <div className={styles.bottom}>
         <div className={styles.copyright}>
-          &copy; {currentYear} Vinay Kumar K.V. All rights reserved. // Enterprise meets Edgy.
+          &copy; {currentYear} Vinay Kumar K V All rights reserved. // Enterprise meets Edgy.
         </div>
         <div className={styles.socials}>
           <a href="https://linkedin.com/in/vinay-kumar-k-v" target="https://linkedin.com/in/vinay-kumar-k-v" rel="noopener noreferrer" className={styles.socialIcon} aria-label="LinkedIn">
